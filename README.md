@@ -43,8 +43,8 @@ Note: You need to set the section height and cellHeight
 | sectionHeaderHeight      | The height of each header section |
 | cellHeight      | The height of each cellheightred      | 
 | data            | The data that will be displayed. This should be an object in the format  { 'A': [{..}, {..}], 'B': [{..}]} |
-| renderCell | This function will return you cell componenet. It will be passed the objects from each element in the data arrays.      | 
-| renderSection | This function should render your section headers. It will be passed an object with key 'sectionId'. The value of 'sectionId' will be the keys from your data object. i.e 'A', 'B', 'C' etc..      | 
+| renderCell | This function will render you cell componenet. It will be passed the objects from each element in the data arrays.      | 
+| renderSection | This function will render your section headers. It will be passed an object with key 'sectionId'. The value of 'sectionId' will be the keys from your data object. i.e 'A', 'B', 'C' etc..      | 
 
 ## Authors
 
