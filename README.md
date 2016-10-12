@@ -36,6 +36,8 @@ render(
 
 ##Props
 Note: You need to set the section height and cellHeight
+
+
 | property        | Description           |
 | ------------- |-------------|
 | sectionHeaderHeight      | The height of each header section |
