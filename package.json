@@ -1,0 +1,56 @@
+{
+  "name": "react-native-atoz-list",
+  "version": "1.0.0",
+  "description": "Fixed height ListView",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "brentvatne@gmail.com",
+  "peerdependencies": {
+    "babel-plugin-syntax-trailing-function-commas": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-preset-stage-3": "^6.5.0",
+    "fbemitter": "^2.0.2",
+    "fbjs": "^0.8.2",
+    "immutable": "^3.8.1",
+    "invariant": "^2.2.1",
+    "lodash": "^4.12.0",
+    "randomcolor": "^0.4.4",
+    "react": "^0.14.8",
+    "react-native": "^0.25.1",
+    "react-native-swipe-actions": "^0.5.3"
+  },
+  "devDependencies": {
+    "babel-jest": "^12.0.2",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "jest-cli": "^12.0.2"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+    "testFileExtensions": [
+      "js"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgovindji/react-native-atoz-list.git"
+  },
+  "keywords": [
+    "selectlist",
+    "alphabetlist",
+    "contactlist"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgovindji/react-native-atoz-list/issues"
+  },
+  "homepage": "https://github.com/rgovindji/react-native-atoz-list#readme"
+}
