@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "brentvatne@gmail.com",
+  "author": "rgovindji@gmail.com",
   "peerdependencies": {
     "babel-plugin-syntax-trailing-function-commas": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
