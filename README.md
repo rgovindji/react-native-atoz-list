@@ -3,6 +3,8 @@ This package is just a fork of the work of brentvatne: https://github.com/brentv
 I fixed some issues with the scrolling not working correctly and exposed the main listview component as AtoZList.
 The scroll performance is great for large lists which is why I switched to using brentvatne's implementation.
 
+
+![Alt text](http://i.imgur.com/8JPUnt5.gif "Example")
 ##Usage
 
 ```js
