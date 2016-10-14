@@ -17,7 +17,6 @@
     "immutable": "^3.8.1",
     "invariant": "^2.2.1",
     "lodash": "^4.12.0",
-    "randomcolor": "^0.4.4",
     "react": "^0.14.8",
     "react-native": "^0.25.1",
     "react-native-swipe-actions": "^0.5.3"

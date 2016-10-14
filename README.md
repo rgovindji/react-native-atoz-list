@@ -18,7 +18,6 @@ let myData = {
 }
 
 render(
-
     return(
         <AtoZList
                 sectionHeaderHeight={20}
