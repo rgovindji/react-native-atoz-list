@@ -5,6 +5,12 @@ The scroll performance is great for large lists which is why I switched to using
 
 
 ![Alt text](http://i.imgur.com/8JPUnt5.gif "Example")
+
+##Install
+```js
+npm i -S react-native-atoz-list
+```
+
 ##Usage
 
 ```js
