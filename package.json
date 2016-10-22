@@ -1,8 +1,8 @@
 {
   "name": "react-native-atoz-list",
   "version": "1.0.0",
-  "description": "Fixed height ListView",
-  "main": "main.js",
+  "description": "High performance fixed height ListView to be used for a contact list or friends list in your application",
+  "main": "AtoZList.js",
   "scripts": {
     "test": "jest"
   },

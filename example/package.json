@@ -11,7 +11,7 @@
     "randomcolor": "^0.4.4",
     "react": "15.3.2",
     "react-native": "^0.35.0",
-    "react-native-atoz-list": "git+https://github.com/rgovindji/react-native-atoz-list.git"
+    "react-native-atoz-list": "^1.0.0"
   },
   "jest": {
     "preset": "jest-react-native"
