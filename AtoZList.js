@@ -57,7 +57,7 @@ export default class AtoZList extends Component {
     this.dataSource = dataSource;
   }
 
-  
+
   componentWillReceiveProps(nextProps) {
     if(this.props.data !== nextProps.data){
       this.setState({
@@ -66,7 +66,7 @@ export default class AtoZList extends Component {
       });
     }
   }
-  
+
 
   render() {
     this._alphabetInstance = this._alphabetInstance || (
@@ -83,7 +83,6 @@ export default class AtoZList extends Component {
             dataSource={this.state.dataSource}
             renderCell={this.props.renderCell}
             renderSectionHeader={this.props.renderSection}
-            getHeightForRowInSection={this._getHeightForRowInSection}
             incrementDelay={16}
             initialNumToRender={8}
             pageSize={Platform.OS === 'ios' ? 15 : 8}
