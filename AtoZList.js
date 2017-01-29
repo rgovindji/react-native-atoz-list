@@ -31,7 +31,8 @@ export default class AtoZList extends Component {
     cellHeight: PropTypes.number.isRequired,
     data: PropTypes.object.isRequired,
     renderCell: PropTypes.func,
-    renderSection: PropTypes.func
+    renderSection: PropTypes.func,
+    onEndReached: PropTypes.func,
   };
 
   constructor(props, context) {
@@ -57,7 +58,7 @@ export default class AtoZList extends Component {
     this.dataSource = dataSource;
   }
 
-  
+
   componentWillReceiveProps(nextProps) {
     if(this.props.data !== nextProps.data){
       this.setState({
@@ -66,7 +67,7 @@ export default class AtoZList extends Component {
       });
     }
   }
-  
+
 
   render() {
     this._alphabetInstance = this._alphabetInstance || (
@@ -90,6 +91,7 @@ export default class AtoZList extends Component {
             maxNumToRender={70}
             numToRenderAhead={40}
             numToRenderBehind={4}
+            onEndReached={this.props.onEndReached}
           />
         </View>
 
