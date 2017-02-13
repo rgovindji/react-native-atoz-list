@@ -31,7 +31,7 @@ render(
                 sectionHeaderHeight={20}
                 cellHeight={60}
                 data={myData}
-                renderCell={this._renderCellComponent} 
+                renderCell={this._renderCellComponent}
                 renderSection={this._renderSectionComponent}
         />
     );
@@ -48,10 +48,11 @@ Note: You need to set the section height and cellHeight
 | property        | Description           |
 | ------------- |-------------|
 | sectionHeaderHeight      | The height of each header section |
-| cellHeight      | The height of each cellheightred      | 
+| cellHeight      | The height of each cellheightred      |
 | data            | The data that will be displayed. This should be an object in the format  { 'A': [{..}, {..}], 'B': [{..}]} |
-| renderCell | This function will render you cell componenet. It will be passed the objects from each element in the data arrays.      | 
-| renderSection | This function will render your section headers. It will be passed an object with key 'sectionId'. The value of 'sectionId' will be the keys from your data object. i.e 'A', 'B', 'C' etc..      | 
+| renderCell | This function will render you cell componenet. It will be passed the objects from each element in the data arrays.      |
+| renderSection | This function will render your section headers. It will be passed an object with key 'sectionId'. The value of 'sectionId' will be the keys from your data object. i.e 'A', 'B', 'C' etc..      |
+| onEndReached | Called when all rows have been rendered and the list has been scrolled to within onEndReachedThreshold of the bottom. The native scroll event is provided.
 
 ## Authors
 

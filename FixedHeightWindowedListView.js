@@ -9,6 +9,7 @@ import {
   ScrollView,
   Text,
   View,
+  Dimensions,
 } from 'react-native';
 
 import FixedHeightWindowedListViewDataSource from './FixedHeightWindowedListViewDataSource';
@@ -191,7 +192,7 @@ export default class FixedHeightWindowedListView extends Component {
   scrollWithoutAnimationTo(destY, destX) {
     this.scrollRef &&
       this.scrollRef.scrollWithoutAnimationTo(destY, destX);
-      
+
   }
 
   // Android requires us to wait a frame between setting the buffer, scrolling
@@ -251,6 +252,17 @@ export default class FixedHeightWindowedListView extends Component {
     this.scrollDirection = this.__getScrollDirection();
     this.height = e.nativeEvent.layoutMeasurement.height;
     this.__enqueueComputeRowsToRender();
+
+    if (this.props.onEndReached) {
+      const windowHeight = Dimensions.get('window').height;
+      const { height } = e.nativeEvent.contentSize;
+      const offset = e.nativeEvent.contentOffset.y;
+
+      if( windowHeight + offset >= height ){
+        // ScrollEnd
+        this.props.onEndReached(e);
+      }
+    }
   }
 
   __getScrollDirection() {
@@ -381,6 +393,7 @@ FixedHeightWindowedListView.propTypes = {
   numToRenderAhead: React.PropTypes.number,
   numToRenderBehind: React.PropTypes.number,
   pageSize: React.PropTypes.number,
+  onEndReached: React.PropTypes.func,
 };
 
 FixedHeightWindowedListView.defaultProps = {
