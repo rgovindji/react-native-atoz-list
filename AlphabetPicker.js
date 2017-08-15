@@ -56,7 +56,7 @@ export default class AlphabetPicker extends Component {
         let top = y - (this.absContainerTop || 0);
 
         if (top >= 1 && top <= this.containerHeight) {
-            return Alphabet[Math.round((top / this.containerHeight) * Alphabet.length)]
+            return Alphabet[Math.floor((top / this.containerHeight) * Alphabet.length)]
         }
     }
 
