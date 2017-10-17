@@ -419,6 +419,6 @@ class CellRenderer extends React.Component {
 }
 
 CellRenderer.propTypes = {
-  shouldUpdate: React.PropTypes.bool,
-  render: React.PropTypes.func,
+  shouldUpdate: PropTypes.bool,
+  render: PropTypes.func,
 };
