@@ -1,6 +1,6 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import { View, Text, PanResponder } from 'react-native';
-
+import PropTypes from 'prop-types';
 
 class LetterPicker extends Component {
 
