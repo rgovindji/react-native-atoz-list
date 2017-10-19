@@ -4,6 +4,7 @@
 'use strict';
 
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import {
   Platform,
   ScrollView,
@@ -384,16 +385,16 @@ export default class FixedHeightWindowedListView extends Component {
 FixedHeightWindowedListView.DataSource = FixedHeightWindowedListViewDataSource;
 
 FixedHeightWindowedListView.propTypes = {
-  dataSource: React.PropTypes.object.isRequired,
-  renderCell: React.PropTypes.func.isRequired,
-  renderSectionHeader: React.PropTypes.func,
-  incrementDelay: React.PropTypes.number,
-  initialNumToRender: React.PropTypes.number,
-  maxNumToRender: React.PropTypes.number,
-  numToRenderAhead: React.PropTypes.number,
-  numToRenderBehind: React.PropTypes.number,
-  pageSize: React.PropTypes.number,
-  onEndReached: React.PropTypes.func,
+  dataSource: PropTypes.object.isRequired,
+  renderCell: PropTypes.func.isRequired,
+  renderSectionHeader: PropTypes.func,
+  incrementDelay: PropTypes.number,
+  initialNumToRender: PropTypes.number,
+  maxNumToRender: PropTypes.number,
+  numToRenderAhead: PropTypes.number,
+  numToRenderBehind: PropTypes.number,
+  pageSize: PropTypes.number,
+  onEndReached: PropTypes.func,
 };
 
 FixedHeightWindowedListView.defaultProps = {
@@ -418,6 +419,6 @@ class CellRenderer extends React.Component {
 }
 
 CellRenderer.propTypes = {
-  shouldUpdate: React.PropTypes.bool,
-  render: React.PropTypes.func,
+  shouldUpdate: PropTypes.bool,
+  render: PropTypes.func,
 };
