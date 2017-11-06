@@ -33,7 +33,7 @@ export default class AtoZList extends Component {
     renderCell: PropTypes.func,
     renderSection: PropTypes.func,
     onEndReached: PropTypes.func,
-    alphabetPickerStyle: propTypes.object
+    alphabetPickerStyle: PropTypes.object
   };
 
   constructor(props, context) {
