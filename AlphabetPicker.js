@@ -20,6 +20,9 @@ export default class AlphabetPicker extends Component {
         if(props.alphabet){
             Alphabet = props.alphabet;
         }
+        this.state = {
+            alphabet: Alphabet,
+          };
     }
 
     componentWillMount() {
@@ -41,6 +44,11 @@ export default class AlphabetPicker extends Component {
             onPanResponderRelease: this._onPanResponderEnd.bind(this),
         });
     }
+    componentWillReceiveProps(nextProps) {
+        if(this.props.alphabet !== nextProps.alphabet){
+            this.setState({alphabet:nextProps.alphabet})
+          }
+      }
 
     _onTouchLetter(letter) {
         letter && this.props.onTouchLetter && this.props.onTouchLetter(letter);
@@ -54,9 +62,10 @@ export default class AlphabetPicker extends Component {
 
     _findTouchedLetter(y) {
         let top = y - (this.absContainerTop || 0);
+        const {alphabet} = this.state
 
         if (top >= 1 && top <= this.containerHeight) {
-            return Alphabet[Math.floor((top / this.containerHeight) * Alphabet.length)]
+            return alphabet[Math.round((top / this.containerHeight) * alphabet.length)]
         }
     }
 
@@ -68,8 +77,9 @@ export default class AlphabetPicker extends Component {
     }
 
     render() {
-        this._letters = this._letters || (
-            Alphabet.map((letter) => <LetterPicker letter={letter} key={letter} />)
+        const {alphabet} = this.state
+        this._letters = (
+            alphabet.map((letter) => <LetterPicker letter={letter} key={letter} />)
         );
 
         return (
