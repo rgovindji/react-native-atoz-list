@@ -264,6 +264,9 @@ export default class FixedHeightWindowedListView extends Component {
         this.props.onEndReached(e);
       }
     }
+    if (this.props.onScroll) {
+      this.props.onScroll(e);
+    }
   }
 
   __getScrollDirection() {
@@ -395,6 +398,7 @@ FixedHeightWindowedListView.propTypes = {
   numToRenderBehind: PropTypes.number,
   pageSize: PropTypes.number,
   onEndReached: PropTypes.func,
+  onScroll: PropTypes.func,
 };
 
 FixedHeightWindowedListView.defaultProps = {
