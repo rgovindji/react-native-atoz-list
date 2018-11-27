@@ -6,12 +6,13 @@ The scroll performance is great for large lists which is why I switched to using
 
 ![Alt text](http://i.imgur.com/8JPUnt5.gif "Example")
 
-##Install
+## Install
+
 ```js
 npm i -S react-native-atoz-list
 ```
 
-##Usage
+## Usage
 
 ```js
 import AtoZList from 'react-native-atoz-list';
@@ -41,7 +42,7 @@ render(
 
 ```
 
-##Props
+## Props
 Note: You need to set the section height and cellHeight
 
 
