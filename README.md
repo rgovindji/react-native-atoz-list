@@ -1,7 +1,5 @@
-This package is just a fork of the work of brentvatne: https://github.com/brentvatne/fixed-height-windowed-list-view-experiment
-
-I fixed some issues with the scrolling not working correctly and exposed the main listview component as AtoZList.
-The scroll performance is great for large lists which is why I switched to using brentvatne's implementation.
+This package is based on the work of brentvatne: https://github.com/brentvatne/fixed-height-windowed-list-view-experiment 
+The scroll performance is great for large lists.
 
 
 ![Alt text](http://i.imgur.com/8JPUnt5.gif "Example")
