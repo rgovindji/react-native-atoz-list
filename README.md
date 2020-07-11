@@ -1,6 +1,7 @@
+# THIS PACKAGE IS NOT MAINTAINED, PLEASE USE SOMETHING ELSE SUCH AS https://github.com/bolan9999/react-native-largelist
+
 This package is based on the work of brentvatne: https://github.com/brentvatne/fixed-height-windowed-list-view-experiment 
 The scroll performance is great for large lists.
-
 
 ![Alt text](http://i.imgur.com/8JPUnt5.gif "Example")
 
