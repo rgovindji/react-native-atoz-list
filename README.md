@@ -1,4 +1,4 @@
-# THIS PACKAGE IS NOT MAINTAINED, PLEASE USE SOMETHING ELSE SUCH AS https://github.com/bolan9999/react-native-largelist
+# THIS PACKAGE IS NOT MAINTAINED, PLEASE USE SOMETHING ELSE SUCH AS FlatList https://reactnative.dev/docs/flatlist or https://github.com/bolan9999/react-native-largelist
 
 This package is based on the work of brentvatne: https://github.com/brentvatne/fixed-height-windowed-list-view-experiment 
 The scroll performance is great for large lists.
